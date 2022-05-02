@@ -10,7 +10,7 @@ var uniform_light_cutoff = shader_get_uniform(shd_basic_3d_stuff, "lightCutoffAn
 shader_set_uniform_f(uniform_light_pos, 250, 250, 64);
 shader_set_uniform_f(uniform_light_color, 1, 1, 1, 1);
 shader_set_uniform_f(uniform_light_range, 500);
-shader_set_uniform_f(uniform_light_dir, -1, -1, -1);
+shader_set_uniform_f(uniform_light_dir, -1, -1, 0);
 shader_set_uniform_f(uniform_light_cutoff, dcos(45));
 
 // 3D projections require a view and projection matrix
@@ -55,9 +55,21 @@ matrix_set(matrix_world, matrix_build(200, 200, 0, 0, 0, 0, 2, 2, 2));
 vertex_submit(vb_sphere, pr_trianglelist, -1);
 matrix_set(matrix_world, matrix_build_identity());
 
-with (Ball) {
-    event_perform(ev_draw, 0);
-}
+shader_set(shd_basic_3d_sprites_with_light);
+var uniform_light_pos = shader_get_uniform(shd_basic_3d_sprites_with_light, "lightPosition");
+var uniform_light_color = shader_get_uniform(shd_basic_3d_sprites_with_light, "lightColor");
+var uniform_light_range = shader_get_uniform(shd_basic_3d_sprites_with_light, "lightRange");
+var uniform_light_dir = shader_get_uniform(shd_basic_3d_sprites_with_light, "lightDirection");
+var uniform_light_cutoff = shader_get_uniform(shd_basic_3d_sprites_with_light, "lightCutoffAngle");
+shader_set_uniform_f(uniform_light_pos, 250, 250, 64);
+shader_set_uniform_f(uniform_light_color, 1, 1, 1, 1);
+shader_set_uniform_f(uniform_light_range, 2000);
+shader_set_uniform_f(uniform_light_dir, -1, -1, 0);
+shader_set_uniform_f(uniform_light_cutoff, dcos(45));
+
+draw_sprite(spr_tree, 0, 0, 0);
+
+
 
 shader_reset();
 
