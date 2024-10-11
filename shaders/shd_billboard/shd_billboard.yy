@@ -1,11 +1,12 @@
 {
-  "type": 1,
-  "parent": {
-    "name": "3DTutorial52InvalidVertexLayout",
-    "path": "3DTutorial52InvalidVertexLayout.yyp",
+  "$GMShader":"",
+  "%Name":"shd_billboard",
+  "name":"shd_billboard",
+  "parent":{
+    "name":"3DTutorial52InvalidVertexLayout",
+    "path":"3DTutorial52InvalidVertexLayout.yyp",
   },
-  "resourceVersion": "1.0",
-  "name": "shd_billboard",
-  "tags": [],
-  "resourceType": "GMShader",
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
 }

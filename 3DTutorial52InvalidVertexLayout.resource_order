@@ -1,0 +1,19 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"fnt_game","order":5,"path":"fonts/fnt_game/fnt_game.yy",},
+    {"name":"Ball","order":2,"path":"objects/Ball/Ball.yy",},
+    {"name":"obj_billboard","order":7,"path":"objects/obj_billboard/obj_billboard.yy",},
+    {"name":"obj_generic_tree","order":11,"path":"objects/obj_generic_tree/obj_generic_tree.yy",},
+    {"name":"Player","order":1,"path":"objects/Player/Player.yy",},
+    {"name":"draw_sprite_billboard","order":8,"path":"scripts/draw_sprite_billboard/draw_sprite_billboard.yy",},
+    {"name":"load_model","order":1,"path":"scripts/load_model/load_model.yy",},
+    {"name":"load_obj","order":10,"path":"scripts/load_obj/load_obj.yy",},
+    {"name":"screen_to_world","order":3,"path":"scripts/screen_to_world/screen_to_world.yy",},
+    {"name":"shd_basic_3d_sprites_with_light","order":2,"path":"shaders/shd_basic_3d_sprites_with_light/shd_basic_3d_sprites_with_light.yy",},
+    {"name":"shd_basic_3d_sprites","order":1,"path":"shaders/shd_basic_3d_sprites/shd_basic_3d_sprites.yy",},
+    {"name":"shd_billboard","order":9,"path":"shaders/shd_billboard/shd_billboard.yy",},
+    {"name":"spr_heart","order":1,"path":"sprites/spr_heart/spr_heart.yy",},
+    {"name":"spr_tree","order":6,"path":"sprites/spr_tree/spr_tree.yy",},
+  ],
+}
